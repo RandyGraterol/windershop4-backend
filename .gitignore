@@ -1,0 +1,163 @@
+# ==========================================
+# Node.js
+# ==========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# ==========================================
+# Variables de Entorno
+# ==========================================
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.*.local
+
+# ==========================================
+# Base de Datos
+# ==========================================
+*.sqlite
+*.sqlite3
+*.db
+database.sqlite
+*.sql
+
+# ==========================================
+# Archivos Subidos (Uploads)
+# ==========================================
+uploads/*
+!uploads/.gitkeep
+!uploads/placeholder-*.jpg
+
+# ==========================================
+# Logs
+# ==========================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ==========================================
+# Testing & Coverage
+# ==========================================
+coverage/
+.nyc_output/
+*.lcov
+.jest/
+test-results/
+
+# ==========================================
+# Build & Distribution
+# ==========================================
+dist/
+build/
+out/
+.next/
+.nuxt/
+.cache/
+
+# ==========================================
+# Sistema Operativo
+# ==========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ==========================================
+# IDEs y Editores
+# ==========================================
+# VSCode
+.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains (WebStorm, IntelliJ, etc)
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*.swn
+*~
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# ==========================================
+# Temporales
+# ==========================================
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+
+# ==========================================
+# Seguridad
+# ==========================================
+# Claves privadas
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.pfx
+
+# Secrets
+secrets/
+.secrets/
+
+# ==========================================
+# Otros
+# ==========================================
+# Lock files (opcional, descomentar si no quieres versionarlos)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Documentación generada
+docs/generated/
+
+# Archivos de respaldo
+*.backup

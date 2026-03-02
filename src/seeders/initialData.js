@@ -52,8 +52,10 @@ async function seedInitialData() {
     const productsData = [
       {
         name: 'Camisa Clásica Oxford',
-        price: 49.99,
-        category: 'Camisas',
+        price: 25.00,
+        priceVES: 900.00,
+        currency: 'USD',
+        category: 'Hombre',
         description: 'Camisa elegante de corte clásico, perfecta para ocasiones formales. Confeccionada en algodón de alta calidad con acabados premium.',
         sizes: 'S,M,L,XL',
         colors: 'Blanco,Azul,Negro',
@@ -62,8 +64,10 @@ async function seedInitialData() {
       },
       {
         name: 'Polo Deportivo Premium',
-        price: 39.99,
-        category: 'Polos',
+        price: 18.00,
+        priceVES: 650.00,
+        currency: 'USD',
+        category: 'Hombre',
         description: 'Polo deportivo de tela transpirable con tecnología de secado rápido. Ideal para actividades casuales y deportivas.',
         sizes: 'M,L,XL',
         colors: 'Negro,Gris,Azul,Verde',
@@ -72,8 +76,10 @@ async function seedInitialData() {
       },
       {
         name: 'Camiseta Básica Cotton',
-        price: 29.99,
-        category: 'Camisetas',
+        price: 12.00,
+        priceVES: 430.00,
+        currency: 'USD',
+        category: 'Mujer',
         description: 'Camiseta básica de algodón 100% suave y cómoda. Un esencial para tu guardarropa diario.',
         sizes: 'S,M,L,XL',
         colors: 'Blanco,Negro,Gris',
@@ -82,8 +88,10 @@ async function seedInitialData() {
       },
       {
         name: 'Camisa Lino Verano',
-        price: 59.99,
-        category: 'Camisas',
+        price: 28.00,
+        priceVES: 1000.00,
+        currency: 'USD',
+        category: 'Hombre',
         description: 'Camisa de lino ligera y fresca, perfecta para los días calurosos. Estilo relajado con máxima comodidad.',
         sizes: 'M,L,XL',
         colors: 'Blanco,Beige,Azul Claro',
@@ -92,8 +100,10 @@ async function seedInitialData() {
       },
       {
         name: 'Polo Rayas Náutico',
-        price: 44.99,
-        category: 'Polos',
+        price: 20.00,
+        priceVES: 720.00,
+        currency: 'USD',
+        category: 'Hombre',
         description: 'Polo con diseño de rayas náuticas, estilo casual elegante. Confeccionado en algodón piqué de primera calidad.',
         sizes: 'S,M,L',
         colors: 'Azul,Rojo,Verde',
@@ -102,33 +112,39 @@ async function seedInitialData() {
       },
       {
         name: 'Camiseta Estampada Urban',
-        price: 34.99,
-        category: 'Camisetas',
+        price: 15.00,
+        priceVES: 540.00,
+        currency: 'USD',
+        category: 'Mujer',
         description: 'Camiseta con estampado moderno y urbano. Diseño exclusivo que combina estilo y comodidad.',
         sizes: 'S,M,L,XL',
         colors: 'Negro,Gris,Blanco',
         featured: false,
-        images: ['/uploads/placeholder-9.jpg']
+        images: ['/uploads/placeholder-1.jpg']
       },
       {
         name: 'Camisa Slim Fit Ejecutiva',
-        price: 69.99,
-        category: 'Camisas',
+        price: 32.00,
+        priceVES: 1150.00,
+        currency: 'USD',
+        category: 'Hombre',
         description: 'Camisa de corte slim fit para el profesional moderno. Tela antiarrugas con cuello italiano.',
         sizes: 'S,M,L,XL',
         colors: 'Blanco,Azul,Negro,Gris',
         featured: true,
-        images: ['/uploads/placeholder-10.jpg', '/uploads/placeholder-11.jpg']
+        images: ['/uploads/placeholder-2.jpg', '/uploads/placeholder-3.jpg']
       },
       {
         name: 'Polo Manga Larga Casual',
-        price: 54.99,
-        category: 'Polos',
+        price: 22.00,
+        priceVES: 790.00,
+        currency: 'USD',
+        category: 'Hombre',
         description: 'Polo de manga larga ideal para climas frescos. Combina elegancia casual con funcionalidad.',
         sizes: 'M,L,XL',
         colors: 'Negro,Azul Marino,Gris',
         featured: false,
-        images: ['/uploads/placeholder-12.jpg']
+        images: ['/uploads/placeholder-4.jpg']
       }
     ];
 

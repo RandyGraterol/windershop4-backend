@@ -20,7 +20,25 @@ module.exports = (sequelize) => {
       allowNull: false,
       validate: {
         min: 0
-      }
+      },
+      comment: 'Precio en USD (dólares)'
+    },
+    priceVES: {
+      type: DataTypes.DECIMAL(12, 2),
+      allowNull: true,
+      validate: {
+        min: 0
+      },
+      comment: 'Precio en VES (bolívares)'
+    },
+    currency: {
+      type: DataTypes.STRING(3),
+      allowNull: false,
+      defaultValue: 'USD',
+      validate: {
+        isIn: [['USD', 'VES']]
+      },
+      comment: 'Moneda principal: USD o VES'
     },
     category: {
       type: DataTypes.STRING,

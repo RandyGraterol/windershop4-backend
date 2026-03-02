@@ -70,7 +70,7 @@ const getAll = async (req, res, next) => {
 const create = async (req, res, next) => {
   try {
     // Extraer datos del request
-    const { name, price, category, description, sizes, colors, featured } = req.body;
+    const { name, price, priceVES, currency, category, description, sizes, colors, featured } = req.body;
     const files = req.files || [];
 
     // Validar que existan name, price y al menos una imagen
@@ -89,6 +89,8 @@ const create = async (req, res, next) => {
     const product = await Product.create({
       name,
       price,
+      priceVES: priceVES || null,
+      currency: currency || 'USD',
       category: category || '',
       description: description || '',
       sizes: sizes || '',
@@ -150,7 +152,7 @@ const update = async (req, res, next) => {
     const { id } = req.params;
     
     // Extraer datos del request body
-    const { name, price, category, description, sizes, colors, featured, removeImages } = req.body;
+    const { name, price, priceVES, currency, category, description, sizes, colors, featured, removeImages } = req.body;
     
     // Extraer archivos nuevos si existen
     const files = req.files || [];
@@ -178,6 +180,12 @@ const update = async (req, res, next) => {
     }
     if (price !== undefined) {
       product.price = price;
+    }
+    if (priceVES !== undefined) {
+      product.priceVES = priceVES || null;
+    }
+    if (currency !== undefined) {
+      product.currency = currency;
     }
     if (category !== undefined) {
       product.category = category;
